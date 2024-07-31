@@ -17,7 +17,7 @@ def authentication():
 
 
 
-def my_jobs(keys) -> list:
+def my_jobs(keys) :
     try:
         server = authentication()
         _jobs = server.get_all_jobs()
