@@ -1,6 +1,13 @@
 pipeline{
     agent any
     stages{
+        stage("check my python vesion"){
+            steps{
+                echo "========Checking version========"
+                sh 'python3 --version'
+            }
+       
+        }
         stage("install the package"){
             steps{
                 echo "========Installing necessary packages========"
