@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+    stages{
+        stage("install the package"){
+            steps{
+                echo "========Installing necessary packages========"
+                sh 'pip3 install -r requirements.txt'
+            }
+       
+        }
+         stage("udate the yaml file"){
+            steps{
+                echo "========Excecute my script========"
+                sh 'python app.py'
+            }
+        }
+    }
+    
+}
