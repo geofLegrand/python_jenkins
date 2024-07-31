@@ -16,7 +16,7 @@ def red_yaml_file(yaml_file):
 
 def write_yaml_file(file_save,_yaml_file):
     try:
-        with open(file_save,'w',newline='') as yaml_doc:
+        with open(file_save,'w') as yaml_doc:
             g = yaml.dump(_yaml_file)
             yaml_doc.write(g)
             print("file save successfully !")
