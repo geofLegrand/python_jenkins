@@ -5,7 +5,7 @@ import os
 
 def authentication():
     
-    jenkins_url='http://3.227.16.75:8080'
+    jenkins_url='http://44.197.113.73:8080'
     jenkins_username='devops'
     jenkins_pass='devops'
     #print(os.environ)
@@ -17,7 +17,7 @@ def authentication():
 
 
 
-def my_jobs(keys:[]) -> list:
+def my_jobs(keys) -> list:
     try:
         server = authentication()
         _jobs = server.get_all_jobs()
