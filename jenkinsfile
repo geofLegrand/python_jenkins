@@ -18,7 +18,7 @@ pipeline{
          stage("udate the yaml file"){
             steps{
                 echo "========Excecute my script========"
-                sh 'python app.py'
+                sh 'python3 app.py'
             }
         }
     }
