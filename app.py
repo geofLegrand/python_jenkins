@@ -7,13 +7,13 @@ import yaml
 from yaml_file import manageyaml as y
 
 
-# print(sys.platform)
-# def data_jenkins():
-#     file_name = "jenkins_jobs.csv"
-#     header = ['Job_name', 'Job_url', 'Job_color']
-#     keys=['name','color','url']
-#     content = jen.my_jobs(keys)
-#     c.csv_generator(file_name,header,content)
+print(sys.platform)
+def data_jenkins():
+    file_name = "jenkins_jobs.csv"
+    header = ['Job_name', 'Job_url', 'Job_color']
+    keys=['name','color','url']
+    content = jen.my_jobs(keys)
+    c.csv_generator(file_name,header,content)
 
 
 def update_yaml_file(_file,save_file):
